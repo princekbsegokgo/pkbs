@@ -1,0 +1,181 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #303b46;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #303b46;
+}
+
+/* Header */
+header {
+    background-color: #303b46;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Top Navigation */
+.topnav {
+    overflow: hidden;
+    background-color:  #1a1a1a;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: background 0.3s ease;
+}
+
+.topnav a:hover {
+    background: white;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Product Cards */
+.product {
+    background: #303b46;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(13, 13, 13, 0.2);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product .card-body {
+    background-color: #3d4142;
+    color: white;
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 850px;
+    margin: auto;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+.mySlides img {
+    width: 90%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Forms */
+.form-label, .form-control {
+    color: black;
+}
+
+/* Order Summary */
+.order-summary p {
+    margin-bottom: 5px;
+}
+
+/* Buttons */
+button, .btn-custom {
+    background: #3d4142;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover, .btn-custom:hover {
+    background-color: #2b2d2e;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+    color: white;
+    margin-top: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .topnav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
